@@ -4,12 +4,12 @@
 
 
 ### Todo:
-- Decide on data storage (Postgresql or Sqlite?)
-- Create `/registration` endpoint
-- Create `/login` endpoint
-- Create basic registration page
-- Create basic login page
-- Research JWT(JSON Web Tokens and using JWT with Express)
+- [ ] Decide on data storage (Postgresql or Sqlite?)
+- [x] Create `/registration` endpoint
+- [x] Create `/login` endpoint
+- [ ] Create basic registration page
+- [ ] Create basic login page
+- [ ]  Research JWT(JSON Web Tokens and using JWT with Express)
 
 ### Possible Future Work
 - Add roles for users to show certain features dependent on role
