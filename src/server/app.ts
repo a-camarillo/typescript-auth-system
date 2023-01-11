@@ -1,10 +1,12 @@
 import express, { Request, Response, NextFunction } from 'express';
 import registration from './registration';
+import login from './login';
 
 const app = express();
 const port: number = 3000;
 
 app.use('/registration',registration);
+app.use('/login', login);
 
 app.get('/', (req: Request, res: Response) => {
     res.set('Content-Type','text/html');
