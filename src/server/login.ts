@@ -1,11 +1,13 @@
 import express, { Request, Response, Router } from 'express';
+import path from 'path';
 
 const router: Router = express.Router();
 
+const loginPage: string = path.join(__dirname,'/client/login.html')
+
 router.get('/', (req: Request, res: Response) => {
-    res.set('Content-Type','text/html');
     res.status(200);
-    res.send("<html><body><h1>This is the login page</h1></body></html>")
+    res.sendFile(loginPage)
 })
 
 export default router;
