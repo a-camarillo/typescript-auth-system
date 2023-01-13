@@ -4,7 +4,7 @@
 
 
 ### Todo:
-- [ ] Decide on data storage (Postgresql or Sqlite?)
+- [x] Decide on data storage (Postgresql or Sqlite?)
 - [x] Create `/registration` endpoint
 - [x] Create `/login` endpoint
 - [x] Create basic registration page
