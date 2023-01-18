@@ -13,11 +13,13 @@ interface UserModel extends Model<InferAttributes<UserModel>, InferCreationAttri
 const UserModel = sequelize.define<UserModel>('User', {
     username: {
         type: DataTypes.STRING,
+        allowNull: false,
         unique: true,
     },
     password: { 
         type: DataTypes.STRING,
     }
 });
+
 
 export default UserModel;
