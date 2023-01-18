@@ -1,6 +1,5 @@
 import express, { Request, Response, NextFunction, Router } from 'express';
 import UserModel from './db.js';
-import { UniqueConstraintError } from '@sequelize/core';
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
