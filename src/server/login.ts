@@ -1,13 +1,16 @@
 import express, { Request, Response, Router } from 'express';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const router: Router = express.Router();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const login: Router = express.Router();
 
 const loginPage: string = path.join(__dirname,'/client/login.html')
 
-router.get('/', (req: Request, res: Response) => {
+login.get('/', (req: Request, res: Response) => {
     res.status(200);
     res.sendFile(loginPage)
 })
 
-export default router;
+export default login;
