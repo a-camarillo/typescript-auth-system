@@ -9,7 +9,6 @@
 - [x] Create `/login` endpoint
 - [x] Create basic registration page
 - [x] Create basic login page
-- [ ]  Research JWT(JSON Web Tokens and using JWT with Express)
 
 ### Possible Future Work
 - Add roles for users to show certain features dependent on role
